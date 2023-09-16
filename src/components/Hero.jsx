@@ -33,10 +33,8 @@ const Hero = () => {
 }
 
 /*
-grid grid-cols-4 gap-4
 
-
-This is that weird tracing motion
+Tracing motion
 
       <motion.svg
       width="60"
