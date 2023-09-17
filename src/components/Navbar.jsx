@@ -62,7 +62,7 @@ const Navbar = () => {
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.1 } }}
 							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<a Projects="text-white-100" href="#projects" style={{ display: "block" }}>
+							<a class="text-white-100" href="#projects" style={{ display: "block" }}>
 								Projects
 							</a>
 						</motion.div>
