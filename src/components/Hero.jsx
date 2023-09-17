@@ -4,13 +4,13 @@ import EarthCanvas from './Planet';
 
 const Hero = () => {
   return (
-    <div class="mx-container h-screen">
+    <div className="mx-container h-screen">
       <motion.div
 				initial={{ y: 40, opacity: 0 }}
 				animate={{ y: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
-        class="h-3/10 flex flex-col items-center justify-end">
-          <p class="text-7xl font-bold">Ricky Lu</p>
-          <p class="text-slate-300">
+        className="h-3/10 flex flex-col items-center justify-end">
+          <p className="text-7xl font-bold">Ricky Lu</p>
+          <p className="text-slate-300">
             <TypeAnimation
               sequence={[
                 'CS @ UWaterloo', 5000,
@@ -25,26 +25,26 @@ const Hero = () => {
           </p>
       </motion.div>
 
-      <div class="h-4/10 md:h-6/10 text-4xl">
-        <div class="h-full md:grid md:grid-cols-4 md:gap-3">
+      <div className="h-4/10 md:h-6/10 text-4xl">
+        <div className="h-full md:grid md:grid-cols-4 md:gap-3">
           <motion.div
 	          initial={{ x: 40, opacity: 0 }}
 	          animate={{ x: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
-            class="hidden md:flex">
+            className="hidden md:flex">
               <p>Email + Resume</p>     
           </motion.div>
           
           <motion.div
 	          initial={{ opacity: 0 }}
 	          animate={{ opacity: 1, transition: { delay: 1.8, duration: 0.2 } }}
-            class="min-h-full md:col-span-2"> 
-              <EarthCanvas /> 
+            className="min-h-full md:col-span-2"> 
+              <EarthCanvas />
           </motion.div>
  
           <motion.div
 	          initial={{ x: -40, opacity: 0 }}
 	          animate={{ x: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
-            class="hidden md:flex">
+            className="hidden md:flex">
             <p>Linkedin + Github</p> 
           </motion.div>
         </div>
@@ -53,14 +53,14 @@ const Hero = () => {
       <motion.div
 	      initial={{ y: -40, opacity: 0 }}
 	      animate={{ y: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
-        class="h-2/10 md:h-0 md:hidden">
+        className="h-2/10 md:h-0 md:hidden">
           <p>Mobile - Email, Resume, LinkedIn, Github</p> 
       </motion.div>
 
       <motion.div
 	      initial={{ y: -40, opacity: 0 }}
 	      animate={{ y: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
-        class="h-1/10 flex-1 text-4xl">
+        className="h-1/10 flex-1 text-4xl">
           <p>Scroll</p> 
       </motion.div>
     </div>
