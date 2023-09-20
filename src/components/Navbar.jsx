@@ -71,7 +71,7 @@ const Navbar = () => {
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.4, duration: 0.1 } }}
 							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<a className="text-white-100" href="/Resume.pdf" style={{ display: "block" }}>
+							<a className="text-white-100 font-semibold" href="/Resume.pdf" style={{ display: "block" }}>
 								Resume
 							</a>
 						</motion.div>

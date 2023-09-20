@@ -25,43 +25,46 @@ const Hero = () => {
           </p>
       </motion.div>
 
-      <div className="h-4/10 md:h-6/10 text-4xl">
-        <div className="h-full md:grid md:grid-cols-4 md:gap-3">
+      <div className="h-6/10">
+        <div className="h-full grid grid-cols-12 place-items-stretch">
           <motion.div
 	          initial={{ x: 40, opacity: 0 }}
 	          animate={{ x: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
-            className="hidden md:flex">
-              <p>Email + Resume</p>     
+            className="flex flex-col col-start-2 col-span-2 items-center justify-center gap-10">
+              <div>Email</div>
+              <div>Resume</div>
           </motion.div>
-          
+
           <motion.div
 	          initial={{ opacity: 0 }}
 	          animate={{ opacity: 1, transition: { delay: 1.8, duration: 0.2 } }}
-            className="min-h-full md:col-span-2"> 
+            className="flex col-span-6 min-h-0 min-w-0"> 
               <EarthCanvas />
           </motion.div>
  
           <motion.div
 	          initial={{ x: -40, opacity: 0 }}
 	          animate={{ x: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
-            className="hidden md:flex">
-            <p>Linkedin + Github</p> 
+            className="flex flex-col col-span-2 items-center justify-center gap-10">
+              <div>LinkedIn</div>
+              <div>Github</div>
           </motion.div>
         </div>
       </div>
-      
-      <motion.div
-	      initial={{ y: -40, opacity: 0 }}
-	      animate={{ y: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
-        className="h-2/10 md:h-0 md:hidden">
-          <p>Mobile - Email, Resume, LinkedIn, Github</p> 
-      </motion.div>
 
       <motion.div
 	      initial={{ y: -40, opacity: 0 }}
 	      animate={{ y: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
-        className="h-1/10 flex-1 text-4xl">
-          <p>Scroll</p> 
+        className="h-1/10 flex flex-col items-center pt-32">
+          <a href='#about'>
+            <div className='w-9 h-16 p-2 rounded-3xl border-4'>
+              <motion.div
+                animate={{ y: [0, 26, 0] }}
+                transition={{ duration: 2.5, repeat: Infinity, repeatType: "loop" }}
+                className='w-3 h-4 rounded-full bg-white'
+              />
+            </div>
+          </a>
       </motion.div>
     </div>
   )
