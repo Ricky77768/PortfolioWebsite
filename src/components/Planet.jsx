@@ -21,6 +21,7 @@ const Earth = () => {
 const EarthCanvas = () => {
   return (
     <Canvas
+      className="no-scroll-canvas"
       shadows
       frameloop='demand'
       dpr={[1, 2]}

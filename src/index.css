@@ -17,3 +17,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.no-scroll-canvas {
+  touch-action: auto !important;
+}

@@ -31,15 +31,15 @@ const Hero = () => {
 	          initial={{ x: 40, opacity: 0 }}
 	          animate={{ x: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
             className="flex flex-col col-start-2 col-span-2 items-end justify-center gap-10">
-              <button type="button" class="w-[90px] h-[90px] flex flex-col justify-center items-center rounded-full border-4 border-white bg-black text-white text-lg
+              <button type="button" className="w-[80px] h-[80px] md:w-[90px] md:h-[90px] flex flex-col justify-center items-center rounded-full border-4 border-white bg-black text-white text-md md:text-lg
                 hover:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-white transition-all">
-              <i class="pt-1 fas fa-envelope fa-lg"></i>
+              <i className="pt-1 fas fa-envelope fa-lg"></i>
               Email
               </button>
 
-              <button type="button" class="w-[90px] h-[90px] flex flex-col justify-center items-center rounded-full border-4 border-white bg-black text-white text-lg
+              <button type="button" className="w-[80px] h-[80px] md:w-[90px] md:h-[90px] flex flex-col justify-center items-center rounded-full border-4 border-white bg-black text-white text-md md:text-lg
                 hover:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-white transition-all">
-              <i class="pt-1 fas fa-address-card fa-lg"></i>
+              <i className="pt-1 fas fa-address-card fa-lg"></i>
               Resume
               </button>
           </motion.div>
@@ -55,15 +55,15 @@ const Hero = () => {
 	          initial={{ x: -40, opacity: 0 }}
 	          animate={{ x: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
             className="flex flex-col col-span-2 items-start justify-center gap-10">
-              <button type="button" class="w-[90px] h-[90px] flex flex-col justify-center items-center rounded-full border-4 border-white bg-black text-white text-lg
+              <button type="button" className="w-[80px] h-[80px] md:w-[90px] md:h-[90px] flex flex-col justify-center items-center rounded-full border-4 border-white bg-black text-white text-md md:text-lg
                 hover:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-white transition-all">
-              <i class="pt-1 fab fa-github fa-lg"></i>
+              <i className="pt-1 fab fa-github fa-lg"></i>
               GitHub
               </button>
 
-              <button type="button" class="w-[90px] h-[90px] flex flex-col justify-center items-center rounded-full border-4 border-white bg-black text-white text-lg
+              <button type="button" className="w-[80px] h-[80px] md:w-[90px] md:h-[90px] flex flex-col justify-center items-center rounded-full border-4 border-white bg-black text-white text-md md:text-lg
                 hover:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-white transition-all">
-              <i class="pt-1 fab fa-linkedin fa-lg"></i>
+              <i className="pt-1 fab fa-linkedin fa-lg"></i>
               LinkedIn
               </button>
           </motion.div>
