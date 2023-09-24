@@ -2,10 +2,10 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
 import EarthCanvas from './Planet';
 
-const Hero = () => {
+const Home = () => {
   return (
-    <div id="home" className="mx-container h-screen">
-      <div className="h-1/10"></div>
+    <div className="mx-container h-screen">
+      <div className="h-[90px]"></div>
       <motion.div
 				initial={{ y: 40, opacity: 0 }}
 				animate={{ y: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
@@ -75,18 +75,16 @@ const Hero = () => {
 	      initial={{ y: -40, opacity: 0 }}
 	      animate={{ y: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
         className="h-2/10 mt-2 flex flex-col items-center">
-          <a href='#about'>
-            <div className='w-9 h-16 p-2 rounded-3xl border-4'>
-              <motion.div
-                animate={{ y: [0, 26, 0] }}
-                transition={{ duration: 2.5, repeat: Infinity, repeatType: "loop" }}
-                className='w-3 h-4 rounded-full bg-white'
-              />
-            </div>
-          </a>
+          <div className='w-9 h-16 p-2 rounded-3xl border-4'>
+            <motion.div
+              animate={{ y: [0, 26, 0] }}
+              transition={{ duration: 2.5, repeat: Infinity, repeatType: "loop" }}
+              className='w-3 h-4 rounded-full bg-white'
+            />
+          </div>
       </motion.div>
     </div>
   )
 }
 
-export default Hero
+export default Home

@@ -1,10 +1,63 @@
+import { motion } from "framer-motion";
 
 const About = () => {
+  const draw = {
+    hidden: { pathLength: 0, opacity: 0 },
+    visible: (i) => {
+      const delay = 1 + i * 0.5;
+      return {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
+          opacity: { delay, duration: 0.01 },
+        },
+      };
+    },
+  };
+
   return (
-    <div id="about" className="h-screen">
-      <h1 className="text-4xl">
-        About Section
-      </h1>
+    <div className="mx-container h-screen">
+      <div className="h-[90px]"></div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 1.0 } }}
+        viewport={{ once: true }}
+        className="h-4/10 bg-yellow-200">
+          Test
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 1.0 } }}
+        viewport={{ once: true }}
+        className="h-2/10 bg-red-200">
+          Test 2
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 1.0 } }}
+        viewport={{ once: true }}
+        className="h-3/10 bg-green-300">
+          <motion.svg
+            width="90"
+            height="90"
+            viewBox="0 0 200 200"
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.circle
+              cx="100"
+              cy="100"
+              r="30"
+              stroke="#ffffff"
+              variants={draw}
+              custom={1}
+            />
+    </motion.svg>
+      </motion.div>
+
     </div>
   )
 }
@@ -12,37 +65,9 @@ const About = () => {
 /*
 Tracing motion
 
-      <motion.svg
-      width="60"
-      height="60"
-      viewBox="0 0 60 60"
-      initial="hidden"
-      animate="visible"
-    >
-      <motion.circle
-        cx="30"
-        cy="30"
-        r="20"
-        stroke="#ff0055"
-        variants={draw}
-        custom={0.5}
-      />
-    </motion.svg>
+    
 
-  const draw = {
-	hidden: { pathLength: 0, opacity: 0 },
-	visible: (i) => {
-		const delay = 1 + i * 0.5;
-		return {
-			pathLength: 1,
-			opacity: 1,
-			transition: {
-				pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-				opacity: { delay, duration: 0.01 },
-			},
-		};
-	},
-};
+  
 
 */
 

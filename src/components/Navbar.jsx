@@ -1,14 +1,19 @@
 import { Logo } from "../assets";
 import { motion } from "framer-motion";
 
-const Navbar = () => {
+const Navbar = ({ home, about, experience, projects }) => {
+  const scrollToHome = () => home.current.scrollIntoView();
+  const scrollToAbout = () => about.current.scrollIntoView();
+  const scrollToExperience = () => experience.current.scrollIntoView();
+  const scrollToProjects = () => projects.current.scrollIntoView();
+
 	return (
 		<header className="sticky top-0 h-[0] flex flex-wrap justify-center md:flex-nowrap z-50 w-full text-lg">
 			<nav
 				className="w-5/6 relative bg-black bg-opacity-80 border-2 border-white-200 rounded-[30px] mt-4 px-6 md:flex md:items-center md:justify-between"
 				style={{ minHeight: "60px" }}>
 				<div className="flex items-center justify-between">
-					<a className="flex-none" href="#">
+					<a className="flex-none" onClick={scrollToHome}>
 						<img className="w-12 py-1 rounded-[36px] h-auto" src={Logo} alt="Logo"></img>
 					</a>
 					<div className="md:hidden">
@@ -35,45 +40,45 @@ const Navbar = () => {
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { duration: 0.1 } }}
 							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<a className="text-white-100" href="#home" style={{ display: "block" }}>
+							<button className="text-white-100" onClick={scrollToHome} style={{ display: "block" }}>
 								Home
-							</a>
+							</button>
 						</motion.div>
 
 						<motion.div
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.1, duration: 0.1 } }}
 							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<a className="text-white-100" href="#about" style={{ display: "block" }}>
+							<button className="text-white-100" onClick={scrollToAbout} style={{ display: "block" }}>
 								About
-							</a>
+							</button>
 						</motion.div>
 
 						<motion.div
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.2, duration: 0.1 } }}
 							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<a className="text-white-100" href="#experience" style={{ display: "block" }}>
+							<button className="text-white-100" onClick={scrollToExperience} style={{ display: "block" }}>
 								Experience
-							</a>
+							</button>
 						</motion.div>
 
 						<motion.div
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.1 } }}
 							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<a className="text-white-100" href="#projects" style={{ display: "block" }}>
+							<button className="text-white-100" onClick={scrollToProjects} style={{ display: "block" }}>
 								Projects
-							</a>
+							</button>
 						</motion.div>
 
 						<motion.div
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.4, duration: 0.1 } }}
 							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<a className="text-white-100 font-semibold" href="/Resume.pdf" style={{ display: "block" }}>
+							<button className="text-white-100 font-semibold" href="/Resume.pdf" style={{ display: "block" }}>
 								Resume
-							</a>
+							</button>
 						</motion.div>
 					</div>
 					<div className="my-2 md:my-0"></div>
