@@ -21,7 +21,3 @@
 .no-scroll-canvas {
   touch-action: auto !important;
 }
-
-html {
-  scroll-behavior: smooth;
-}

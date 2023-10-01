@@ -2,10 +2,10 @@ import { Logo } from "../assets";
 import { motion } from "framer-motion";
 
 const Navbar = ({ home, about, experience, projects }) => {
-  const scrollToHome = () => home.current.scrollIntoView();
-  const scrollToAbout = () => about.current.scrollIntoView();
-  const scrollToExperience = () => experience.current.scrollIntoView();
-  const scrollToProjects = () => projects.current.scrollIntoView();
+  const scrollToHome = () => home.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToAbout = () => about.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToExperience = () => experience.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToProjects = () => projects.current.scrollIntoView({ behavior: 'smooth' });
 
 	return (
 		<header className="sticky top-0 h-[0] flex flex-wrap justify-center md:flex-nowrap z-50 w-full text-lg">
@@ -35,12 +35,12 @@ const Navbar = ({ home, about, experience, projects }) => {
 
 				<div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
 					<div className="my-1 md:my-0"></div>
-					<div className="flex flex-col gap-y-1 mr-6 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-8 md:mt-0 md:pl-7">
+					<div className="flex flex-col gap-y-1 mr-6 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-8 md:mt-0 md:pl-7 text-neutral-400">
 						<motion.div
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { duration: 0.1 } }}
-							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<button className="text-white-100" onClick={scrollToHome} style={{ display: "block" }}>
+							whileHover={{ color: "#FFFFFF", transition: { duration: 0.25 } }}>
+							<button onClick={scrollToHome} style={{ display: "block" }}>
 								Home
 							</button>
 						</motion.div>
@@ -48,8 +48,8 @@ const Navbar = ({ home, about, experience, projects }) => {
 						<motion.div
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.1, duration: 0.1 } }}
-							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<button className="text-white-100" onClick={scrollToAbout} style={{ display: "block" }}>
+							whileHover={{ color: "#FFFFFF", transition: { duration: 0.25 } }}>
+							<button onClick={scrollToAbout} style={{ display: "block" }}>
 								About
 							</button>
 						</motion.div>
@@ -57,8 +57,8 @@ const Navbar = ({ home, about, experience, projects }) => {
 						<motion.div
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.2, duration: 0.1 } }}
-							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<button className="text-white-100" onClick={scrollToExperience} style={{ display: "block" }}>
+							whileHover={{ color: "#FFFFFF", transition: { duration: 0.25 } }}>
+							<button onClick={scrollToExperience} style={{ display: "block" }}>
 								Experience
 							</button>
 						</motion.div>
@@ -66,8 +66,8 @@ const Navbar = ({ home, about, experience, projects }) => {
 						<motion.div
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.1 } }}
-							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<button className="text-white-100" onClick={scrollToProjects} style={{ display: "block" }}>
+							whileHover={{ color: "#FFFFFF", transition: { duration: 0.25 } }}>
+							<button onClick={scrollToProjects} style={{ display: "block" }}>
 								Projects
 							</button>
 						</motion.div>
@@ -75,8 +75,8 @@ const Navbar = ({ home, about, experience, projects }) => {
 						<motion.div
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.4, duration: 0.1 } }}
-							whileHover={{ color: "#2FC4DE", transition: { duration: 0.25 } }}>
-							<button className="text-white-100 font-semibold" href="/Resume.pdf" style={{ display: "block" }}>
+							whileHover={{ color: "#FFFFFF", transition: { duration: 0.25 } }}>
+							<button className="font-semibold" href="/Resume.pdf" style={{ display: "block" }}>
 								Resume
 							</button>
 						</motion.div>

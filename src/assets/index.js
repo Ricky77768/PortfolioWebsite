@@ -1,3 +1,4 @@
 import Logo from "./Logo.jpg";
+import Photo from "./Photo.jpg"
 
-export { Logo };
+export { Logo, Photo };
