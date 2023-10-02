@@ -6,7 +6,7 @@ const About = () => {
   const languageElements = languages.map((language) => (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: {delay: 0.5 + Math.random(), duration: 0.8} }} 
+      whileInView={{ opacity: 1, transition: {delay: Math.random(), duration: 0.8} }} 
       viewport={{ once: true }}
       className="relative flex justify-center items-center w-fit min-w-[75px] h-[40px] border-2 rounded-[25px]">
       <div className="mx-3 text-xl">{language}</div>
@@ -16,7 +16,7 @@ const About = () => {
   const techElements = technologies.map((technology) => (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: {delay: 0.5 + Math.random(), duration: 0.8} }} 
+      whileInView={{ opacity: 1, transition: {delay: Math.random(), duration: 0.8} }} 
       viewport={{ once: true }}
       className="relative flex justify-center items-center w-fit min-w-[75px] h-[40px] border-2 rounded-[25px]">
       <div className="mx-3 text-xl">{technology}</div>
@@ -38,7 +38,7 @@ const About = () => {
               Hi there!
             </p>
             <p className="md:text-xl text-l mt-3">
-              Fascinated by the transformative power of code, I began my programming journey in 2017. Since then, I have explored various areas such as game development, web development, and application development.
+              Fascinated by the transformative power of code, I began my programming journey in 2017. Since then, I have explored various areas such as <b>game development</b>, <b>web development</b>, and <b>application development</b>.
             </p>
           </div>
       </motion.div>
