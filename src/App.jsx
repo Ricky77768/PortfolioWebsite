@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react'
+import StarsBG from './components/Stars'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
-import StarsBG from './components/Stars'
+import Footer from './components/Footer'
 
 const App = () => {
   const homeRef = useRef()
@@ -32,6 +33,7 @@ const App = () => {
         <Experience />
         <div ref={projectsRef} className='max-h-0'></div>
         <Projects />
+        <Footer />
       </div>
     </div>
   )
