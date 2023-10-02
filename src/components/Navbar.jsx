@@ -76,7 +76,7 @@ const Navbar = ({ home, about, experience, projects }) => {
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1, transition: { delay: 0.4, duration: 0.1 } }}
 							whileHover={{ color: "#FFFFFF", transition: { duration: 0.25 } }}>
-							<button className="font-semibold" href="/Resume.pdf" style={{ display: "block" }}>
+							<button onClick={() => window.location.href = '/Resume.pdf'} className="font-semibold" style={{ display: "block" }}>
 								Resume
 							</button>
 						</motion.div>

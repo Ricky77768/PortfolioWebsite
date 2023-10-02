@@ -16,18 +16,23 @@ const App = () => {
     import('preline');
   }, []);
 
-  return (
+  return (    
     <div>
-      <Navbar home={homeRef} about={aboutRef} experience={experienceRef} projects={projectsRef}/>
-      <div ref={homeRef} className='max-h-0'></div>
-      <Home />
-      <div ref={aboutRef} className='max-h-0'></div>
-      <About />
-      <div ref={experienceRef} className='max-h-0'></div>
-      <Experience />
-      <div ref={projectsRef} className='max-h-0'></div>
-      <Projects />
-      <StarsBG /> 
+      <div className='fixed inset-0'>
+        <StarsBG />
+      </div> 
+      
+      <div className='absolute'>
+        <Navbar home={homeRef} about={aboutRef} experience={experienceRef} projects={projectsRef}/>
+        <div ref={homeRef} className='max-h-0'></div>
+        <Home />
+        <div ref={aboutRef} className='max-h-0'></div>
+        <About />
+        <div ref={experienceRef} className='max-h-0'></div>
+        <Experience />
+        <div ref={projectsRef} className='max-h-0'></div>
+        <Projects />
+      </div>
     </div>
   )
 }
