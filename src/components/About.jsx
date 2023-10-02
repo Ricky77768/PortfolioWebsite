@@ -30,7 +30,7 @@ const About = () => {
         whileInView={{ opacity: 1, transition: { duration: 1.0 } }}
         viewport={{ once: true }}
         className="grid grid-cols-10 items-center justify-items-center mb-4">
-          <div className="md:max-w-[35vh] md:col-start-2 md:col-span-2 max-w-[20vh] col-span-10 flex">
+          <div className="md:max-w-[35vh] md:col-start-2 md:col-span-2 md:mt-0 mt-4 max-w-[20vh] min-h-[150px] min-w-[150px] col-span-10 flex">
             <img className="border-4 border-white rounded-full" src={Photo} alt="Profile Image"/>
           </div>
           <div className="md:col-span-6 md:px-4 py-4 px-8 col-span-10 text-center flex flex-col">
