@@ -7,8 +7,8 @@ import "react-vertical-timeline-component/style.min.css";
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: "#151515", color: "#ffffff" }}
-      contentArrowStyle={{ borderRight: "12px solid #151515" }}
+      contentStyle={{ background: "#171717", color: "#ffffff" }}
+      contentArrowStyle={{ borderRight: "12px solid #171717" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -40,7 +40,7 @@ const Experience = () => {
         <div className="md:text-5xl text-4xl text-semibold text-center">
           Work Experience
         </div>
-        <div className="md:text-2xl text:xl text-center">
+        <div className="md:text-2xl text-xl text-center">
           Click on the icons to see the company!
         </div>
       </motion.div>

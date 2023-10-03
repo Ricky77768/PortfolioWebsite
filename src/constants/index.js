@@ -1,4 +1,5 @@
-import { Logo, BehaviourInteractive, Faire, FleetComplete, MetaTrader4, TheScore } from "../assets"
+import { BehaviourInteractive, Faire, FleetComplete, MetaTrader4, TheScore,
+         Portfolio1, Portfolio2, Unity1, Unity2, Android1, Android2, CSGame1, CSGame2, Degree1, Degree2 } from "../assets"
 
 const languages = ["Kotlin", "Java", "C#", "C/C++", "Python", "JavaScript/TypeScript", "HTML/CSS", "SQL", "MQL4", "Racket"]
 const technologies = ["Android Studio", "Jetpack Compose", "Unity", "React.js", "Three.js", "Tailwind CSS", "Cypress", "Jenkins", "RxJava", "MetaTrader 4", "Git/Perforce", "Jira/Confluence"]
@@ -51,5 +52,64 @@ const experiences = [
   },
 ];
 
+// Leave repoText2 & repoLink2 as "" to disable second button
+const projects = [
+  {
+    title: "Portfolio Websites",
+    tech: "React, Three.js, Tailwind CSS",
+    desc: "Personal websites that showcase my past experience.",
+    image1: Portfolio1,
+    image2: Portfolio2,
+    repoText1: "Version 1",
+    repoLink1: "https://github.com/Ricky77768/Ricky77768.github.io",
+    repoText2: "Version 2",
+    repoLink2: "https://github.com/Ricky77768/PortfolioWebsite",
+  },
+  {
+    title: "3D Unity Games",
+    tech: "Unity, C#",
+    desc: "Unity games that incorporate ball rolling, platforming, and shooting gameplay elements.",
+    image1: Unity1,
+    image2: Unity2,
+    repoText1: "Ball Rolling",
+    repoLink1: "https://github.com/Ricky77768/Hamsterball-Like-Game",
+    repoText2: "Platformer",
+    repoLink2: "https://github.com/Ricky77768/3D-Unity-Platformer",
+  },
+  {
+    title: "Android Applications",
+    tech: "Android Studio, Java",
+    desc: "Android apps that use OpenWeather/Google Maps API to serve location/weather data.",
+    image1: Android1,
+    image2: Android2,
+    repoText1: "Map",
+    repoLink1: "https://github.com/Ricky77768/mapApplication",
+    repoText2: "Weather",
+    repoLink2: "https://github.com/Ricky77768/weatherApp",
+  },
+  {
+    title: "Computer Science Games",
+    tech: "Greenfoot, Java",
+    desc: "Games created for grade 11/12 courses that has platforming, typing, and memory elements.",
+    image1: CSGame1,
+    image2: CSGame2,
+    repoText1: "Games",
+    repoLink1: "https://github.com/Ricky77768/ComputerScienceGames",
+    repoText2: "",
+    repoLink2: "",
+  },
+  {
+    title: "Degree Map",
+    tech: "React, SQL",
+    desc: "Web application created for database course to help students manage classes.",
+    image1: Degree1,
+    image2: Degree2,
+    repoText1: "App",
+    repoLink1: "https://github.com/Kggupta/DegreeMap",
+    repoText2: "",
+    repoLink2: "",
+  },
+];
 
-export { languages, technologies, experiences }
+
+export { languages, technologies, experiences, projects }
