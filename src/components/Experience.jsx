@@ -35,7 +35,7 @@ const Experience = () => {
       <div className="h-[90px]"></div>
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, transition: { duration: 1.0 } }}
+        whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
         viewport={{ once: true }}>
         <div className="md:text-5xl text-4xl text-semibold text-center">
           Work Experience

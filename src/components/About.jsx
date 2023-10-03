@@ -6,7 +6,7 @@ const About = () => {
   const languageElements = languages.map((language) => (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: {delay: Math.random(), duration: 0.8} }} 
+      whileInView={{ opacity: 1, transition: {delay: Math.random(), duration: 0.5} }} 
       viewport={{ once: true }}
       className="relative flex justify-center items-center w-fit min-w-[75px] h-[40px] border-2 rounded-[25px]">
       <div className="mx-3 text-xl">{language}</div>
@@ -16,7 +16,7 @@ const About = () => {
   const techElements = technologies.map((technology) => (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: {delay: Math.random(), duration: 0.8} }} 
+      whileInView={{ opacity: 1, transition: {delay: Math.random(), duration: 0.5} }} 
       viewport={{ once: true }}
       className="relative flex justify-center items-center w-fit min-w-[75px] h-[40px] border-2 rounded-[25px]">
       <div className="mx-3 text-xl">{technology}</div>
@@ -27,7 +27,7 @@ const About = () => {
     <div className="flex flex-col justify-center min-h-screen">
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, transition: { duration: 1.0 } }}
+        whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
         viewport={{ once: true }}
         className="grid grid-cols-10 items-center justify-items-center mb-4">
           <div className="md:max-w-[35vh] md:col-start-2 md:col-span-2 md:mt-0 mt-4 max-w-[20vh] min-h-[150px] min-w-[150px] col-span-10 flex">
@@ -45,7 +45,7 @@ const About = () => {
 
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1, transition: { duration: 1.0 } }}
+        whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
         viewport={{ once: true }}
         className="grid grid-cols-10 gap-4">
           <div className="md:col-start-2 md:col-span-4 md:mx-0 mx-8 col-span-10">

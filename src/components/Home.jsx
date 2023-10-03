@@ -8,18 +8,18 @@ const Home = () => {
       <div className="h-[90px]"></div>
       <motion.div
 				initial={{ y: 40, opacity: 0 }}
-				animate={{ y: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
+				animate={{ y: 0, opacity: 1, transition: { delay: 1.5, duration: 0.5 } }}
         className="flex flex-col items-center justify-end">
           <p className="text-7xl font-bold">Ricky Lu</p>
           <p className="text-slate-300">
             <TypeAnimation
               sequence={[
-                'CS @ UWaterloo', 5000,
-                'Software Developer', 5000,
-                'Hello, World!', 5000
+                'CS @ UWaterloo', 4000,
+                'Software Developer', 4000,
+                'Hello, World!', 4000
               ]}
               wrapper="span"
-              speed={70}
+              speed={75}
               style={{ fontSize: '1.8em', display: 'inline-block' }}
               repeat={Infinity}
             />
@@ -30,7 +30,7 @@ const Home = () => {
         <div className="h-full grid grid-cols-12">
           <motion.div
 	          initial={{ x: 40, opacity: 0 }}
-	          animate={{ x: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
+	          animate={{ x: 0, opacity: 1, transition: { delay: 1.5, duration: 0.5 } }}
             className="flex flex-col col-start-2 col-span-2 items-end justify-center gap-10 my-24">
               <button type="button" className="w-[80px] h-[80px] md:w-[90px] md:h-[90px] flex flex-col justify-center items-center rounded-full border-4 border-white bg-black text-white text-md md:text-lg
                 hover:bg-neutral-800 focus:outline-none focus:ring-4 focus:ring-white transition-all" onClick={() => window.location.href = 'mailto:ruikailu@gmail.com'}>
@@ -47,14 +47,14 @@ const Home = () => {
 
           <motion.div
 	          initial={{ opacity: 0 }}
-	          animate={{ opacity: 1, transition: { delay: 1.8, duration: 0.2 } }}
+	          animate={{ opacity: 1, transition: { delay: 1.3, duration: 0.2 } }}
             className="flex col-span-6 min-h-0 min-w-0">
               <EarthCanvas></EarthCanvas>
           </motion.div>
  
           <motion.div
 	          initial={{ x: -40, opacity: 0 }}
-	          animate={{ x: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
+	          animate={{ x: 0, opacity: 1, transition: { delay: 1.5, duration: 0.5 } }}
             className="flex flex-col col-span-2 items-start justify-center gap-10 my-24">
               <button type="button" className="w-[80px] h-[80px] md:w-[90px] md:h-[90px] flex flex-col justify-center items-center rounded-full border-4 border-white bg-black text-white text-md md:text-lg
                 hover:bg-neutral-800 focus:outline-none focus:ring-4 focus:ring-white transition-all" onClick={() => window.location.href = 'https://github.com/Ricky77768'}>
@@ -73,7 +73,7 @@ const Home = () => {
 
       <motion.div
 	      initial={{ y: -40, opacity: 0 }}
-	      animate={{ y: 0, opacity: 1, transition: { delay: 2.0, duration: 0.5 } }}
+	      animate={{ y: 0, opacity: 1, transition: { delay: 1.5, duration: 0.5 } }}
         className="mt-2 flex flex-col items-center">
           <div className='w-9 h-16 p-2 rounded-3xl border-4'>
             <motion.div

@@ -11,7 +11,7 @@ const experiences = [
     iconBg: "#FFFFFF",
     link: "https://www.thescore.com/",
     date: "September 2023 - December 2023",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies malesuada nisi eget venenatis. Ut vitae pharetra justo. Sed mattis felis augue, sed hendrerit turpis vehicula ut. Pellentesque mollis pellentesque.",
+    description: "Develop fully-tested features and enhance shared components using Kotlin, Charles Proxy, and MVVM/MVP architecture.",
   },
   {
     title: "Android Engineer",
@@ -20,7 +20,7 @@ const experiences = [
     iconBg: "#333333",
     link: "https://www.faire.com/",
     date: "January 2023 - April 2023",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies malesuada nisi eget venenatis. Ut vitae pharetra justo. Sed mattis felis augue, sed hendrerit turpis vehicula ut. Pellentesque mollis pellentesque.",
+    description: "Implemented fully-tested app features across various screens using Kotlin, RxJava, and Jetpack Compose, following the MVVM/MVP architecture.",
   },
   {
     title: "Game Programmer",
@@ -29,7 +29,7 @@ const experiences = [
     iconBg: "#000000",
     link: "https://www.bhvr.com/",
     date: "May 2022 - August 2022",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies malesuada nisi eget venenatis. Ut vitae pharetra justo. Sed mattis felis augue, sed hendrerit turpis vehicula ut. Pellentesque mollis pellentesque."
+    description: "Developed C# components for the Unity game Jurassic World Primal Ops and related backend routes using TypeScript."
   },
   {
     title: "Automation Developer",
@@ -38,7 +38,7 @@ const experiences = [
     iconBg: "#FFFFFF",
     link: "https://www.fleetcomplete.com/",
     date: "September 2021 - December 2021",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies malesuada nisi eget venenatis. Ut vitae pharetra justo. Sed mattis felis augue, sed hendrerit turpis vehicula ut. Pellentesque mollis pellentesque.",
+    description: "Researched and implemented a frontend Cypress automation framework, integrating it into a Jenkins CI/CD pipeline.",
   },
   {
     title: "Customized MetaTrader Project",
@@ -47,7 +47,7 @@ const experiences = [
     iconBg: "#FFFFFF",
     link: "https://www.metatrader4.com/",
     date: "November 2018 - September 2021",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies malesuada nisi eget venenatis. Ut vitae pharetra justo. Sed mattis felis augue, sed hendrerit turpis vehicula ut. Pellentesque mollis pellentesque.",
+    description: "Created and maintained MQL4 trading algorithms to automate the client's trading routines.",
   },
 ];
 
