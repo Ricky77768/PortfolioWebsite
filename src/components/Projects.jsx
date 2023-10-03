@@ -44,7 +44,7 @@ const Projects = () => {
         viewport={{ once: true }}
         className="flex flex-row flex-wrap justify-center gap-6">
           {projects.map((project) => ( 
-            <div className="group w-[280px] h-[420px] flex flex-col h-full bg-neutral-900 border-2 border-white shadow-sm rounded-xl">
+            <div className="group w-[280px] min-h-[420px] flex flex-col h-full bg-neutral-900 border-2 border-white shadow-sm rounded-xl">
               <div className="h-48 relative flex flex-col justify-center items-center border-b-2">
                 <motion.img 
                   src={project.image1} alt="Project Image 1"
