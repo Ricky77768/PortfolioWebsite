@@ -101,7 +101,7 @@ const projects = [
   {
     title: "Degree Map",
     tech: "React, SQL",
-    desc: "Web application created for database course to help students manage classes.",
+    desc: "Web application created in a team for database course to help students manage classes.",
     image1: Degree1,
     image2: Degree2,
     repoText1: "App",
