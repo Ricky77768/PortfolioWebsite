@@ -2,7 +2,7 @@ import { BehaviourInteractive, Faire, FleetComplete, MetaTrader4, TheScore,
          Portfolio1, Portfolio2, Unity1, Unity2, Android1, Android2, CSGame1, CSGame2, Degree1, Degree2 } from "../assets"
 
 const languages = ["Kotlin", "Java", "C#", "C/C++", "Python", "JavaScript/TypeScript", "HTML/CSS", "SQL", "MQL4", "Racket"]
-const technologies = ["Android Studio", "Jetpack Compose", "Unity", "React.js", "Three.js", "Tailwind CSS", "Cypress", "Jenkins", "RxJava", "MetaTrader 4", "Git/Perforce", "Jira/Confluence"]
+const technologies = ["Android Studio", "Jetpack Compose", "Firebase Crashlytics", "Charles Proxy", "Unity", "React.js", "Three.js", "Tailwind CSS", "Cypress", "Jenkins", "RxJava", "MetaTrader 4", "Git/Perforce", "Jira/Confluence"]
 
 const experiences = [
   {
@@ -12,7 +12,7 @@ const experiences = [
     iconBg: "#FFFFFF",
     link: "https://www.thescore.com/",
     date: "September 2023 - December 2023",
-    description: "Develop fully-tested features and enhance shared components using Kotlin, Charles Proxy, and MVVM/MVP architecture.",
+    description: "Maintained theScore app and resolved crashes using Kotlin, Charles Proxy, Firebase Crashlytics, following MVVM architecture.",
   },
   {
     title: "Android Engineer",
