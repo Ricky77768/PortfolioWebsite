@@ -1,18 +1,27 @@
 import { BehaviourInteractive, Faire, FleetComplete, MetaTrader4, TheScore,
          Portfolio1, Portfolio2, Unity1, Unity2, Android1, Android2, CSGame1, CSGame2, Degree1, Degree2 } from "../assets"
 
-const languages = ["Kotlin", "Java", "C#", "C/C++", "Python", "JavaScript/TypeScript", "HTML/CSS", "SQL", "MQL4", "Racket"]
-const technologies = ["Android Studio", "Jetpack Compose", "Firebase Crashlytics", "Charles Proxy", "Unity", "React.js", "Three.js", "Tailwind CSS", "Cypress", "Jenkins", "RxJava", "MetaTrader 4", "Git/Perforce", "Jira/Confluence"]
+const languages = ["Kotlin", "Java", "C#", "C/C++", "JavaScript/TypeScript", "Python", "HTML/CSS", "SQL", "GraphQL"]
+const technologies = ["Android Studio", "Jetpack Compose", "Firebase Crashlytics", "Charles Proxy", "Apollo Kotlin", "RxJava", "Unity Engine", "React.js", "Three.js", "Tailwind CSS", "Cypress", "Jenkins", "Git/Perforce"]
 
 const experiences = [
+   {
+    title: "Android Developer - Wagering",
+    company: "theScore Inc",
+    icon: TheScore,
+    iconBg: "#FFFFFF",
+    link: "https://about.thescore.bet/",
+    date: "May 2024 - December 2024",
+    description: "Implemented features on theScore/ESPN BET app using Kotlin, GraphQL, and Charles Proxy, following MVVM architecture.",
+  },
   {
-    title: "Android Developer",
+    title: "Android Developer - Ecosystem",
     company: "theScore Inc",
     icon: TheScore,
     iconBg: "#FFFFFF",
     link: "https://www.thescore.com/",
     date: "September 2023 - December 2023",
-    description: "Maintained theScore app and resolved crashes using Kotlin, Charles Proxy, Firebase Crashlytics, following MVVM architecture.",
+    description: "Maintained theScore Media app and resolved crashes using Kotlin, Charles Proxy, and Firebase Crashlytics.",
   },
   {
     title: "Android Engineer",
