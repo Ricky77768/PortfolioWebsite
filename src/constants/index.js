@@ -2,7 +2,7 @@ import { BehaviourInteractive, Faire, FleetComplete, MetaTrader4, TheScore,
          Portfolio1, Portfolio2, Unity1, Unity2, Android1, Android2, CSGame1, CSGame2, Degree1, Degree2 } from "../assets"
 
 const languages = ["Kotlin", "Java", "C#", "C/C++", "JavaScript/TypeScript", "Python", "HTML/CSS", "SQL", "GraphQL"]
-const technologies = ["Android Studio", "Jetpack Compose", "Firebase Crashlytics", "Charles Proxy", "Apollo Kotlin", "RxJava", "Unity Engine", "React.js", "Three.js", "Tailwind CSS", "Cypress", "Jenkins", "Git/Perforce"]
+const technologies = ["Android Studio", "Jetpack Compose", "RxJava", "Apollo Kotlin", "Mockito", "JUnit", "Charles Proxy", "Firebase Crashlytics", "Unity Engine", "React.js", "Three.js", "Tailwind CSS", "Cypress", "Jenkins", "Git/Perforce"]
 
 const experiences = [
    {
