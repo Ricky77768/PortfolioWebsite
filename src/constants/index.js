@@ -2,16 +2,25 @@ import { BehaviourInteractive, Faire, FleetComplete, MetaTrader4, TheScore,
          Portfolio1, Portfolio2, Unity1, Unity2, Android1, Android2, CSGame1, CSGame2, Degree1, Degree2 } from "../assets"
 
 const languages = ["Kotlin", "Java", "C#", "C/C++", "JavaScript/TypeScript", "Python", "HTML/CSS", "SQL", "GraphQL"]
-const technologies = ["Android Studio", "Jetpack Compose", "RxJava", "Apollo Kotlin", "Mockito", "JUnit", "Charles Proxy", "Firebase Crashlytics", "Unity Engine", "React.js", "Three.js", "Tailwind CSS", "Cypress", "Jenkins", "Git/Perforce"]
+const technologies = ["Android Studio", "Jetpack Compose", "RxJava", "Apollo Kotlin", "Mockito", "JUnit", "Koin", "Charles Proxy", "Firebase Crashlytics", "Unity Engine", "React.js", "Three.js", "Tailwind CSS", "Cypress", "Jenkins", "Git/Perforce"]
 
 const experiences = [
+   {
+    title: "Android Developer - Community",
+    company: "theScore Inc",
+    icon: TheScore,
+    iconBg: "#FFFFFF",
+    link: "https://www.thescore.com/",
+    date: "September 2024 - December 2024",
+    description: "Built and enhanced community app features such as threaded comments, reactions, and activity feed notification counters, using Kotlin, Jetpack Compose, and Koin dependency injection.",
+   },
    {
     title: "Android Developer - Wagering",
     company: "theScore Inc",
     icon: TheScore,
     iconBg: "#FFFFFF",
     link: "https://about.thescore.bet/",
-    date: "May 2024 - December 2024",
+    date: "May 2024 - September 2024",
     description: "Implemented features on theScore/ESPN BET app using Kotlin, GraphQL, and Charles Proxy, following MVVM architecture.",
   },
   {
